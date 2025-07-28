@@ -1,0 +1,21 @@
+---
+layout: default
+title: Chef Profile - Sofia Ramirez
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="chef-profile">
+  <h2>{{ chef.name }}</h2>
+  <p>{{ chef.description }}</p>
+
+  <h3>Signature Dishes:</h3>
+  <ul>
+    {% for dish in chef.signature_dishes %}
+      <li>{{ dish }}</li>
+    {% endfor %}
+  </ul>
+
+  <h3>Location:</h3>
+  <p>{{ chef.location }}</p>
+</div>
